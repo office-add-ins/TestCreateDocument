@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Word Add-In with Commands Sample</title>
+
+    <script src="Scripts/jquery-1.9.1.js" type="text/javascript"></script>
+    <script src="Scripts/FabricUI/MessageBanner.js" type="text/javascript"></script>
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js" type="text/javascript"></script>
+
+    <script src="Dialog.js" type="text/javascript"></script>
+
+    <!-- For the Office UI Fabric, go to https://aka.ms/office-ui-fabric to learn more. -->
+    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/7.2.0/css/fabric.min.css">
+    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.4.0/css/fabric.components.min.css" />
+    <script src="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.4.0/js/fabric.min.js"></script>
+    <!-- To enable the offline use of Office UI Fabric, use: -->
+    <!-- link rel="stylesheet" href="Content/fabric.min.css" -->
+    <!-- link rel="stylesheet" href="Content/fabric.components.min.css" -->
+    <script>
+        var clickEvent;
+        // The initialize function must be defined each time a new page is loaded
+        (function () {
+            Office.initialize = function (reason) {
+            };
+        })();
+
+    </script>
+
+</head>
+<body>
+    <div style="margin:30px auto;">
+        <button id="open" class="ms-Button ms-Button--primary" style="width:100%;">
+            <span class="ms-Button-label">打开新文档</span>
+        </button>
+    </div>
+
+</body>
+</html>
+
+
+<script type="text/javascript">
+    var ButtonElements = document.querySelectorAll(".ms-Button");
+    for (var i = 0; i < ButtonElements.length; i++) {
+        new fabric['Button'](ButtonElements[i], function () {
+            // Insert Event Here
+        });
+    }
+</script>
