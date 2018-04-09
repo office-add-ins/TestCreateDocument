@@ -1,6 +1,6 @@
 ## Dialog使用注意点。
 
-<img src="http://git.ztosys.com/AppPlatform/ztoversion/raw/develop/screenshot.jpeg" width="300" height="590" alt="图片描述文字"/>
+<img src="https://raw.githubusercontent.com/office-add-ins/TestCreateDocument/master/screenshot.png" width="580" height="400" alt="Error Info"/>
 
 `切记，Dialog里不能调用Word.run`
 
